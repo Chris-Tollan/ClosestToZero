@@ -1,0 +1,45 @@
+/** style body, container, input, button and canvas **/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: rgba(255, 174, 66, 1);
+    color: rgba(0, 0, 128, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 128, 1);
+    color: rgba(255, 174, 66, 1);
+}
+
+canvas {
+    margin-top: 20px;
+}
