@@ -7,7 +7,7 @@ The brief for this project was - "<i>A company records different temperatures fr
 - The data being input by the user should be validated.
 - A chart displaying the user inputs can be displayed so the user can visualize the results.
 
-The live site can be accessed via the following link - 
+The live site can be accessed via the following link - https://chris-tollan.github.io/ClosestToZero/
 
 This code is a simple web application that allows users to input a list of temperatures separated by commas and find the temperature closest to zero. It also displays a bar chart of the input temperatures, with positive numbers colored in orange and negative numbers colored blue.
 
@@ -39,15 +39,15 @@ In order to work on this repository you will first need to clone it.
 
 ### User Stories
 
-    - The user wants to enter a number of temperatures to establish which is closest to zero.
-    - The user wants to be able to easily understand and use the application.
-    - The user wants the results to be displayed in a manner which is clear to understand and visualize.
+- The user wants to enter a number of temperatures to establish which is closest to zero.
+- The user wants to be able to easily understand and use the application.
+- The user wants the results to be displayed in a manner which is clear to understand and visualize.
       
 ## Design and Planning
 
 - For this project I wrote down on a notepad what was required as outlined in the above brief. I then broke this down into sections to complete. 
     - Firsty I decided to deveolp a UI using HTML consisting of a clear statement of what the application does, an area where the user can input values, a button to display the results and an area where a bar chart displaying the users inputed values can be shown.
-    - I then decided to used javascript to - 
+    - I then decided to use javascript to - 
         1. Get the user input and convert to an array.
         2. Handle invalid input.
         3. Find the closest number to zero.
@@ -59,15 +59,23 @@ In order to work on this repository you will first need to clone it.
 ### Application
 
 - Inital home screen
+  
+![findClosestToZero](https://github.com/Chris-Tollan/ClosestToZero/assets/134441833/5cedf174-2e0c-4e9b-a6fa-d38238ec90ba)
 
 
-- Results 
+- Results
+  
+![findClosestToZeroResults](https://github.com/Chris-Tollan/ClosestToZero/assets/134441833/be66521f-c40f-4eba-b6b0-d998f25a16a9)
 
 
-- Empty User Input Validation 
+- Empty User Input Validation
+  
+![findClosestToZeroEmptyInput](https://github.com/Chris-Tollan/ClosestToZero/assets/134441833/f7924f89-36ed-490c-abf6-9d8a32bdd4c4)
 
 
 - Invalid User Input Validation
+  
+![findClosestToZeroInvalidInput](https://github.com/Chris-Tollan/ClosestToZero/assets/134441833/1c6056be-49d6-412f-8833-fba6dc33873b)
 
 
 
