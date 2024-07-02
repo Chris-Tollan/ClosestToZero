@@ -2,6 +2,11 @@ function findClosestToZero() {
     const input = document.getElementById("numbers").value; // Get input value
     const numbers = input.split(",").map(num => parseFloat(num)); // Convert comma-separated input to an array of numbers
 
+    if (numbers.some(isNaN)) { // Check for invalid input
+        document.getElementById("result").innerText = "Invalid input. Please enter valid temperatures as numbers."; // Display error message
+        return;
+    }
+
     let closestToZero = numbers[0]; // Initialize closestToZero to first number
 
     for (let i = 0; i < numbers.length; i++) {
