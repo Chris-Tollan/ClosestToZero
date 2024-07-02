@@ -1,5 +1,11 @@
 function findClosestToZero() {
     const input = document.getElementById("numbers").value; // Get input value
+
+    if (!input.trim()) { // Check if input is empty
+        document.getElementById("result").innerText = "Input cannot be empty. Please enter valid temperatures as numbers."; // Display error message
+        return;
+    }
+
     const numbers = input.split(",").map(num => parseFloat(num)); // Convert comma-separated input to an array of numbers
 
     if (numbers.some(isNaN)) { // Check for invalid input
