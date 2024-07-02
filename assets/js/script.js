@@ -8,6 +8,8 @@ function findClosestToZero() {
     }
 
     let closestToZero = numbers[0]; // Initialize closestToZero to first number
+    let positiveNumbers = numbers.filter(num => num >= 0); // Filter positive numbers
+    let negativeNumbers = numbers.filter(num => num < 0); // Filter negative numbers
 
     for (let i = 0; i < numbers.length; i++) {
         if (Math.abs(numbers[i]) < Math.abs(closestToZero) ||
@@ -36,7 +38,16 @@ function findClosestToZero() {
         options: {
             scales: {
                 y: {
-                    beginAtZero: false // Start at 0 but now we go upwards for positive and downwards for negative
+                    beginAtZero: false, // Start at 0 but now we go upwards for positive and downwards for negative
+                    ticks: {
+                        callback: function(value, index, values) {
+                            if (value > 0) {
+                                return value + ' (Hot)';
+                            } else {
+                                return value + ' (Cold)';
+                            }
+                        }
+                    }
                 }
             }
         }
